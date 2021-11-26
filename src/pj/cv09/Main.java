@@ -61,6 +61,13 @@ public class Main {
         }
         getFileSize(filename); //print size of file
 
+        //start demo of part 2
+        System.out.println("========================");
+        System.out.println("=       PART 2         =");
+        System.out.println("========================");
+        IOFileTool ioFileTool = new IOFileTool();
+        ioFileTool.init();
+
     }
 
     public static void writeBin(String filename, int i, long l) throws FileNotFoundException, IOException {
@@ -105,7 +112,7 @@ public class Main {
         try {
             fileInputStream = new FileInputStream(filename);
             dataInputStream = new DataInputStream(fileInputStream);
-
+            //TODO replace with switch
             if (order == 0) { //normal order
                 i = dataInputStream.readInt();
                 l = dataInputStream.readLong();

@@ -1,0 +1,19 @@
+package pj.cv09;
+
+import java.io.*;
+
+public class IOFileTool {
+    private static final String FILENAME_1 = "1.txt";
+    private static final String FILENAME_2 = "2.txt";
+    //private static final String FILENAME_3 = "3.txt";
+
+    IOFileTool() {
+        init();
+    }
+
+    private static void init() {
+
+        int znaky = pocet_znaku(FILENAME_1);
+        System.out.println("Pocet znaku ve " + FILENAME_1 + ":" + znaky);
+
+    }
